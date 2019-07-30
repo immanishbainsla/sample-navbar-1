@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script>
+    $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      
+   </script>
+    </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="logo">
+                  LOGO
+               </div>
+               <div class="menu-icon">
+                     <i class="fa fa-bars fa-2x"></i>
+                  </div>
+               <div class="menu">
+                  <ul>
+                     <li class="list-item"><div class="container h-100">
+                           <div class="d-flex justify-content-center h-100">
+                             <div class="searchbar">
+                               <input class="search_input" type="text" name="" placeholder="Find Courses">
+                               <a href="#" class="search_icon"><i class="fas fa-search fa-2x"></i></a>
+                             </div>
+                           </div>
+                         </div></li>
+                     <li class="list-item"><a href="#">Courses</a></li>
+                     <li class="list-item"><a href="#">Educators</a></li>
+                     <li class="list-item"><a href="#">Become an educator</a></li>
+                     <li class="list-item"><form>
+                           <div class="form-group">
+                             <select class="form-control" id="con-select">
+                               <option class="con-op">IN</option>
+                               <option class="con-op">USA</option>
+                               <option class="con-op">Japan</option>
+                               <option class="con-op">UK</option>
+                             </select></li>
+                     <li class="list-item"><button class="button button-1 button-1a">login</button></li>
+                     <li class="list-item"><button class="button button-1 button-1a">create course now</button></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <div class="content">
+            <p>
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+         </div>
+      </div>
+
+   </body>
+</html>
